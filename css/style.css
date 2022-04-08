@@ -1,0 +1,55 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    background-color: #ffdd00;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1em;
+}
+.ms-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+}
+
+.rounded {
+    border-radius: 1rem!important;
+}
+
+.ms-height {
+    height: 30px;
+}
+
+label {
+    color: #fcb000;
+    font-weight: 700;
+}
+
+button {
+    color: #fcb000!important;
+}
+
+.ms-pl-12 {
+    padding-left: 12px;
+}
+
+.ms-bg-gray {
+    background-color: gray;
+}
