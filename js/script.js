@@ -48,7 +48,7 @@ formBtn.addEventListener("click", function() {
 
     document.getElementById("cp-code").innerHTML = `9${cpCode}`;
 
-    document.getElementById("final-ticket-price").innerHTML = finalTicketPrice.toFixed(2);
+    document.getElementById("final-ticket-price").innerHTML = finalTicketPrice.toFixed(2) + `€`;
 
     const ticketContainer = document.querySelector(".ticket-container");
     ticketContainer.classList.remove("d-none");
