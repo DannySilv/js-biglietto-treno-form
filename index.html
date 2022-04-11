@@ -23,88 +23,98 @@
 
     <!-- MAIN -->
     <main>
-        <h3 class="text-center mb-5">Calcola il prezzo del tuo biglietto!</h3>
 
-        <div class="ms-container rounded shadow mb-5">
-            <div class="container-fluid">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-3 text-center">
-                        <div class="form-item text-center">
-                            <label for="user-name" class="mb-2">Nome e Cognome</label>
-                            <input type="text" name="user-name" id="user-name" class="w-100" placeholder="Inserisci Nome">
+        <!-- CALCOLO BIGLIETTO -->
+        <section>
+            <h3 class="text-center mb-5">Calcola il prezzo del tuo biglietto!</h3>
+            <div class="ms-container rounded shadow mb-5">
+                <div class="container-fluid">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-3 text-center">
+                            <div class="form-item text-center">
+                                <label for="user-name" class="mb-2">Nome e Cognome</label>
+                                <input type="text" name="user-name" id="user-name" class="w-100" placeholder="Inserisci Nome">
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div class="form-item text-center">
+                                <label for="bus-ride-km" class="mb-2">Km da percorrere</label>
+                                <input type="text" name="bus-ride-km" id="bus-ride-km" class="w-100" placeholder="Inserisci Kilometri">
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <div class="text-center">
+                                <label for="user-age" class="mb-2">Fascia d'età</label>
+                                <select name="user-age" id="user-age" class="w-100 ms-height">
+                                    <option value=""></option>
+                                    <option value="under-18">Minorenne</option>
+                                    <option value="over-18">Maggiorenne</option>
+                                    <option value="over-65">Over 65</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-3 text-center">
-                        <div class="form-item text-center">
-                            <label for="bus-ride-km" class="mb-2">Km da percorrere</label>
-                            <input type="text" name="bus-ride-km" id="bus-ride-km" class="w-100" placeholder="Inserisci Kilometri">
-                        </div>
-                    </div>
-                    <div class="col-3 text-center">
-                        <div class="text-center">
-                            <label for="user-age" class="mb-2">Fascia d'età</label>
-                            <select name="user-age" id="user-age" class="w-100 ms-height">
-                                <option value=""></option>
-                                <option value="under-18">Minorenne</option>
-                                <option value="over-18">Maggiorenne</option>
-                                <option value="over-65">Over 65</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-2 text-end">
-                        <button type="button" class="btn btn-secondary btn-sm" id="form-btn">Genera</button>
-                    </div>
-                    <div class="col-2">
-                        <button type="button" class="btn btn-secondary btn-sm" id="back-btn">Annulla</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-none ticket-container">
-            <h3 class="text-center">Il tuo biglietto</h3>
-
-            <div class="ms-container">
-                <h4 class="ms-pl-12">DETTAGLI PASSEGGERO</h4>
-                <div class="container-fluid border">
-                    <div class="row bg-secondary mb-5">
-                        <div class="col-3">
-                            <h5 class="pt-3">NOME PASSEGGERO</h5>
+                    <div class="row justify-content-center">
+                        <div class="col-2 text-end">
+                            <button type="button" class="btn btn-secondary btn-sm" id="form-btn">Genera</button>
                         </div>
                         <div class="col-2">
-                            <h5 class="pt-3">Offerta</h5>
-                        </div>
-                        <div class="col-2">
-                            <h5 class="pt-3">Carrozza</h5>
-                        </div>
-                        <div class="col-2">
-                            <h5 class="pt-3">Codice CP</h5>
-                        </div>
-                        <div class="col-3">
-                            <h5 class="pt-3">Costo Biglietto</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <h5 class="pt-3" id="passenger-name"></h5>
-                        </div>
-                        <div class="col-2">
-                            <h5 class="pt-3" id="offer"></h5>
-                        </div>
-                        <div class="col-2">
-                            <h5 class="pt-3" id="couch"></h5>
-                        </div>
-                        <div class="col-2">
-                            <h5 class="pt-3" id="cp-code"></h5>
-                        </div>
-                        <div class="col-3">
-                            <h5 class="pt-3" id="final-ticket-price"></h5>
+                            <button type="button" class="btn btn-secondary btn-sm" id="back-btn">Annulla</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- /CALCOLO BIGLIETTO -->
+
+        <!-- BIGLIETTO -->
+        <section>
+            <div class="d-none ticket-container">
+                <h3 class="text-center">Il tuo biglietto</h3>
+
+                <div class="ms-container">
+                    <h4 class="ms-pl-12">DETTAGLI PASSEGGERO</h4>
+                    <div class="container-fluid border">
+                        <div class="row bg-secondary mb-5">
+                            <div class="col-3">
+                                <h5 class="pt-3">NOME PASSEGGERO</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3">Offerta</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3">Carrozza</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3">Codice CP</h5>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="pt-3">Costo Biglietto</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <h5 class="pt-3" id="passenger-name"></h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3" id="offer"></h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3" id="couch"></h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="pt-3" id="cp-code"></h5>
+                            </div>
+                            <div class="col-3">
+                                <h5 class="pt-3" id="final-ticket-price"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /BIGLIETTO -->
+        
     </main>
     <!-- /MAIN -->
 
