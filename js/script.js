@@ -18,9 +18,13 @@ formBtn.addEventListener("click", function() {
     let couch = Math.floor(Math.random() * 10 + 1);
     console.log(couch);
 
-    let cpCode = Math.floor(Math.random() * (9999 + 1));
-    console.log(cpCode);
-    
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
+      }
+      
+    let cpCode = randomIntFromInterval(90000, 99999)
+    console.log(cpCode)
+
     let ticketPrice = busRideKm * 0.21;
     console.log(ticketPrice);
 
@@ -46,7 +50,7 @@ formBtn.addEventListener("click", function() {
 
     document.getElementById("couch").innerHTML = couch;
 
-    document.getElementById("cp-code").innerHTML = `9${cpCode}`;
+    document.getElementById("cp-code").innerHTML = `${cpCode}`;
 
     document.getElementById("final-ticket-price").innerHTML = finalTicketPrice.toFixed(2) + `€`;
 
